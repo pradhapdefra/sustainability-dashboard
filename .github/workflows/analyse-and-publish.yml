@@ -4,7 +4,7 @@ name: Sustainability Analysis
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "0 2 * * *"   # optional nightly run
 
 jobs:
   analyse:
@@ -12,30 +12,31 @@ jobs:
 
     steps:
       # -------------------------------------------------
-      # Checkout DASHBOARD repo (this repo)
+      # Checkout DASHBOARD repo (self)
       # -------------------------------------------------
       - name: Checkout dashboard
         uses: actions/checkout@v4
 
       # -------------------------------------------------
       # Checkout SOURCE repo to analyse
+      # (matches ADO 'sourceRepo')
       # -------------------------------------------------
       - name: Checkout source repo
         uses: actions/checkout@v4
         with:
           repository: DEFRA/service-manual-ui
-          path: source
+          path: service-manual-ui
 
       # -------------------------------------------------
-      # Clone ANALYSER repo manually using PAT
-      # (NO actions/checkout here)
+      # Clone ANALYSER repo (ADO 'sustainabilityAnalyzer')
+      # Manual clone to avoid checkout API issues
       # -------------------------------------------------
       - name: Clone sustainability analyser
         run: |
-          git clone https://x-access-token:${{ secrets.ANALYZER_REPO_TOKEN }}@github.com/pradhapdefra/sustainability-analyzer.git analyzer
+          git clone https://x-access-token:${{ secrets.ANALYZER_REPO_TOKEN }}@github.com/pradhapdefra/sustainability-analyzer.git sps.sustainability.analyzer
 
       # -------------------------------------------------
-      # Setup Python
+      # Setup Python (matches ADO)
       # -------------------------------------------------
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -44,39 +45,45 @@ jobs:
 
       # -------------------------------------------------
       # Run sustainability analysis
+      # (1:1 with your working ADO command)
       # -------------------------------------------------
       - name: Run analyser
         run: |
-          pip install -r analyzer/requirements.txt
-          python analyzer/analyzer/runner.py \
-            --path source \
-            --output result.json
+          python sps.sustainability.analyzer/analyzer/runner.py \
+            --path service-manual-ui \
+            --output root.json
 
       # -------------------------------------------------
-      # Publish results into dashboard data folder
+      # Publish results into DASHBOARD repo
+      # (same logic as ADO)
       # -------------------------------------------------
-      - name: Update dashboard data
+      - name: Publish sustainability results
         run: |
+          set -e
+
           PROJECT="service-manual-ui"
           DATE="$(date +%Y-%m-%d)"
 
           TARGET_DIR="data/$PROJECT"
+          TARGET_FILE="$TARGET_DIR/$DATE.json"
+          INDEX_FILE="$TARGET_DIR/index.json"
+
           mkdir -p "$TARGET_DIR"
 
-          cp result.json "$TARGET_DIR/$DATE.json"
-          cp "$TARGET_DIR/$DATE.json" "$TARGET_DIR/latest.json"
+          cp root.json "$TARGET_FILE"
+          cp "$TARGET_FILE" "$TARGET_DIR/latest.json"
 
-          if [ ! -f "$TARGET_DIR/index.json" ]; then
-            echo "[]" > "$TARGET_DIR/index.json"
+          if [ ! -f "$INDEX_FILE" ]; then
+            echo "[]" > "$INDEX_FILE"
           fi
 
-          if ! jq -e --arg f "$DATE.json" '.[] | select(. == $f)' "$TARGET_DIR/index.json" >/dev/null; then
-            jq --arg f "$DATE.json" '. + [$f]' "$TARGET_DIR/index.json" > "$TARGET_DIR/index.tmp"
-            mv "$TARGET_DIR/index.tmp" "$TARGET_DIR/index.json"
+          if ! jq -e --arg f "$DATE.json" '.[] | select(. == $f)' "$INDEX_FILE" >/dev/null; then
+            jq --arg f "$DATE.json" '. + [$f]' "$INDEX_FILE" > "$INDEX_FILE.tmp"
+            mv "$INDEX_FILE.tmp" "$INDEX_FILE"
           fi
 
       # -------------------------------------------------
-      # Commit results back to dashboard repo
+      # Commit results (dashboard repo = Pages source)
       # -------------------------------------------------
       - name: Commit results
         run: |
