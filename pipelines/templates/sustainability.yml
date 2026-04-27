@@ -1,10 +1,12 @@
 
-name: Sustainability Analysis
+name: Sustainability Analysisname" || echo "No changes"
+          git push
+``
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 2 * * *"   # optional
+    - cron: "0 2 * * *"   # optional nightly run
 
 jobs:
   analyse:
@@ -28,8 +30,9 @@ jobs:
 
       # -------------------------------------------------
       # Clone ANALYSER repo manually using PAT
+      # (DO NOT use actions/checkout here)
       # -------------------------------------------------
-      - name: Clone sustainability analyser (private)
+      - name: Clone sustainability analyser
         run: |
           git clone https://x-access-token:${{ secrets.ANALYZER_REPO_TOKEN }}@github.com/pradhapdefra/sustainability-analyzer.git analyzer
 
@@ -83,5 +86,3 @@ jobs:
           git config user.email "github-actions@github.com"
 
           git add data/
-          git commit -m "Sustainability update: service-manual-ui $DATE" || echo "No changes"
-          git push
