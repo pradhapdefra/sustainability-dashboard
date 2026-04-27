@@ -1,0 +1,99 @@
+
+trigger: none
+
+pool:
+  vmImage: ubuntu-latest
+
+resources:
+  repositories:
+    # -------------------------------------------------
+    # Source repository to analyse (GitHub)
+    # -------------------------------------------------
+    - repository: sourceRepo
+      type: github
+      name: DEFRA/service-manual-ui
+      endpoint: github.com_pradhapdefra
+
+    # -------------------------------------------------
+    # Sustainability analyzer (GitHub)
+    # -------------------------------------------------
+    - repository: sustainabilityAnalyzer
+      type: github
+      name: pradhapdefra/sustainability-analyzer
+      endpoint: github.com_pradhapdefra
+
+steps:
+# -------------------------------------------------
+# Checkout DASHBOARD repo (self, writable)
+# -------------------------------------------------
+- checkout: self
+  clean: true
+  persistCredentials: true
+  displayName: 'Checkout Sustainability Dashboard (self)'
+
+# -------------------------------------------------
+# Checkout SOURCE repo (GitHub, read-only)
+# -------------------------------------------------
+- checkout: sourceRepo
+  displayName: 'Checkout DEFRA/service-manual-ui'
+
+# -------------------------------------------------
+# Checkout ANALYZER repo (GitHub, read-only)
+# -------------------------------------------------
+- checkout: sustainabilityAnalyzer
+  displayName: 'Checkout Sustainability Analyzer'
+
+# -------------------------------------------------
+# Use Python (hosted agent already has it)
+# -------------------------------------------------
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.11'
+  displayName: 'Use Python 3.11'
+
+# -------------------------------------------------
+# Run sustainability analysis
+# -------------------------------------------------
+- script: |
+    python sustainability-analyzer/analyzer/runner.py \
+      --path service-manual-ui \
+      --output analysis.json
+  displayName: 'Analyse service-manual-ui'
+
+# -------------------------------------------------
+# Publish results INTO DASHBOARD repo (GitHub Pages source)
+# -------------------------------------------------
+- script: |
+    set -e
+
+    cd "$(Build.SourcesDirectory)/sps.sustainability.dashboard"
+
+    PROJECT="service-manual-ui"
+    DATE="$(date +%Y-%m-%d)"
+
+    TARGET_DIR="data/$PROJECT"
+    TARGET_FILE="$TARGET_DIR/$DATE.json"
+    INDEX_FILE="$TARGET_DIR/index.json"
+
+    mkdir -p "$TARGET_DIR"
+
+    cp "$(Build.SourcesDirectory)/analysis.json" "$TARGET_FILE"
+    cp "$TARGET_FILE" "$TARGET_DIR/latest.json"
+
+    if [ ! -f "$INDEX_FILE" ]; then
+      echo "[]" > "$INDEX_FILE"
+    fi
+
+    if ! jq -e --arg f "$DATE.json" '.[] | select(. == $f)' "$INDEX_FILE" > /dev/null; then
+      jq --arg f "$DATE.json" '. + [$f]' "$INDEX_FILE" > "$INDEX_FILE.tmp"
+      mv "$INDEX_FILE.tmp" "$INDEX_FILE"
+    fi
+
+    git config user.email "sustainability@defra.gov.uk"
+    git config user.name "Sustainability Pipeline"
+
+    git add "data/$PROJECT"
+    git commit -m "Sustainability update: $PROJECT $DATE"
+    git push origin HEAD:main
+  displayName: 'Publish Sustainability Results'
+  

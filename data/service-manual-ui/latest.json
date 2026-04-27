@@ -1,0 +1,31 @@
+{
+  "sustainability_metrics": {
+    "overall_score": 49,
+    "energy_efficiency": 40,
+    "resource_utilization": 50,
+    "performance_optimization": 50,
+    "sustainable_practices": 55
+  },
+  "analysis_summary": {
+    "file_count": 533,
+    "timestamp": "2026-04-23T16:17:17.376656"
+  },
+  "directory_scores": [
+    {
+      "path": "sps-apim-gateway",
+      "file_count": 533,
+      "score": 50,
+      "status": "Fair"
+    }
+  ],
+  "issues": [
+    {
+      "type": "directory-concentration",
+      "severity": "medium",
+      "message": "A single directory contains over 60% of files, increasing maintainability risk."
+    }
+  ],
+  "recommendations": [
+    "Consider consolidating or reorganising directories to improve structural sustainability."
+  ]
+}
