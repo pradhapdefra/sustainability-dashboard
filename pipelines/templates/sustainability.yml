@@ -1,9 +1,10 @@
+
 name: Sustainability Analysis
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 2 * * *"   # optional nightly run
+    - cron: "0 2 * * *"   # optional
 
 jobs:
   analyse:
@@ -17,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       # -------------------------------------------------
-      # Checkout SOURCE repo to analyse (public or private)
+      # Checkout SOURCE repo to analyse
       # -------------------------------------------------
       - name: Checkout source repo
         uses: actions/checkout@v4
@@ -26,15 +27,11 @@ jobs:
           path: source
 
       # -------------------------------------------------
-      # Checkout ANALYSER repo (PRIVATE, using PAT)
+      # Clone ANALYSER repo manually using PAT
       # -------------------------------------------------
-      - name: Checkout sustainability analyser
-        uses: actions/checkout@v4
-        with:
-          repository: pradhapdefra/sustainability-analyzer
-          path: analyzer
-          ref: master
-          token: ${{ secrets.ANALYZER_REPO_TOKEN }}
+      - name: Clone sustainability analyser (private)
+        run: |
+          git clone https://x-access-token:${{ secrets.ANALYZER_REPO_TOKEN }}@github.com/pradhapdefra/sustainability-analyzer.git analyzer
 
       # -------------------------------------------------
       # Setup Python
