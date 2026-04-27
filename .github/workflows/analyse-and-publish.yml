@@ -4,46 +4,57 @@ name: Sustainability Analysis
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 2 * * *"   # nightly (optional)
+    - cron: "0 2 * * *"
 
 jobs:
   analyse:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout dashboard repo (this repo)
+      # -------------------------------------------------
+      # Checkout DASHBOARD repo (this repo)
+      # -------------------------------------------------
       - name: Checkout dashboard
         uses: actions/checkout@v4
 
-      # Checkout source repo to analyse
+      # -------------------------------------------------
+      # Checkout SOURCE repo to analyse
+      # -------------------------------------------------
       - name: Checkout source repo
         uses: actions/checkout@v4
         with:
           repository: DEFRA/service-manual-ui
           path: source
 
-      # Checkout analyser
-      - name: Checkout analyser
-        uses: actions/checkout@v4
-        with:
-          repository: pradhapdefra/sustainability-analyzer
-          path: analyzer
+      # -------------------------------------------------
+      # Clone ANALYSER repo manually using PAT
+      # (NO actions/checkout here)
+      # -------------------------------------------------
+      - name: Clone sustainability analyser
+        run: |
+          git clone https://x-access-token:${{ secrets.ANALYZER_REPO_TOKEN }}@github.com/pradhapdefra/sustainability-analyzer.git analyzer
 
+      # -------------------------------------------------
       # Setup Python
+      # -------------------------------------------------
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # Run analyser
-      - name: Run sustainability analysis
+      # -------------------------------------------------
+      # Run sustainability analysis
+      # -------------------------------------------------
+      - name: Run analyser
         run: |
           pip install -r analyzer/requirements.txt
           python analyzer/analyzer/runner.py \
             --path source \
             --output result.json
 
-      # Publish results to dashboard
+      # -------------------------------------------------
+      # Publish results into dashboard data folder
+      # -------------------------------------------------
       - name: Update dashboard data
         run: |
           PROJECT="service-manual-ui"
@@ -64,11 +75,14 @@ jobs:
             mv "$TARGET_DIR/index.tmp" "$TARGET_DIR/index.json"
           fi
 
-      # Commit results back to repo
+      # -------------------------------------------------
+      # Commit results back to dashboard repo
+      # -------------------------------------------------
       - name: Commit results
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
+
           git add data/
           git commit -m "Sustainability update: service-manual-ui $DATE" || echo "No changes"
           git push
