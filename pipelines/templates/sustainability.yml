@@ -33,6 +33,7 @@ jobs:
         with:
           repository: pradhapdefra/sustainability-analyzer
           path: analyzer
+          ref: master
           token: ${{ secrets.ANALYZER_REPO_TOKEN }}
 
       # -------------------------------------------------
