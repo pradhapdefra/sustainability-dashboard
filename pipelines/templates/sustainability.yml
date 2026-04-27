@@ -1,5 +1,5 @@
 
-name: Sustainability Analysis
+name: Sustainability Analysis v2
 
 on:
   workflow_dispatch:
