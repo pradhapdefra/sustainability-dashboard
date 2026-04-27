@@ -6,6 +6,9 @@ on:
   schedule:
     - cron: "0 2 * * *"   # optional nightly run
 
+permissions:
+  contents: write
+
 jobs:
   analyse:
     runs-on: ubuntu-latest
