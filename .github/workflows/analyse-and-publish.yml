@@ -27,8 +27,8 @@ jobs:
       - name: Checkout source repo
         uses: actions/checkout@v4
         with:
-          repository: DEFRA/service-manual-ui
-          path: service-manual-ui
+          repository: DEFRA/prompt-library
+          path: prompt-library
 
       # -------------------------------------------------
       # Clone ANALYSER repo (ADO 'sustainabilityAnalyzer')
@@ -53,7 +53,7 @@ jobs:
       - name: Run analyser
         run: |
           python sps.sustainability.analyzer/analyzer/runner.py \
-            --path service-manual-ui \
+            --path prompt-library \
             --output root.json
 
       # -------------------------------------------------
@@ -64,7 +64,7 @@ jobs:
         run: |
           set -e
 
-          PROJECT="service-manual-ui"
+          PROJECT="prompt-library"
           DATE="$(date +%Y-%m-%d)"
 
           TARGET_DIR="data/$PROJECT"
