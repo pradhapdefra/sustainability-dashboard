@@ -8,7 +8,7 @@
   },
   "analysis_summary": {
     "file_count": 242,
-    "timestamp": "2026-04-28T05:24:53.128811+00:00"
+    "timestamp": "2026-04-28T11:40:15.809852+00:00"
   },
   "directory_scores": [
     {
@@ -37,6 +37,57 @@
   ],
   "file_scores": [
     {
+      "path": "service-manual-ui/package-lock.json",
+      "green_score": 95,
+      "issues": 1,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [
+        {
+          "rule": "config-large",
+          "severity": "medium",
+          "message": "Large configuration or IaC file increases parsing and maintenance cost.",
+          "suggestion": "Split configuration into smaller, reusable modules.",
+          "example": "Extract shared resources into separate templates."
+        }
+      ],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/.prettierrc.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/.npmrc",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
       "path": "service-manual-ui/README.md",
       "green_score": 100,
       "issues": 0,
@@ -47,7 +98,17 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/nodemon.json",
+      "path": "service-manual-ui/LICENCE",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/compose.yml",
       "green_score": 100,
       "issues": 0,
       "practices": 1,
@@ -74,7 +135,41 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/.npmignore",
+      "path": "service-manual-ui/nodemon.json",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "config-small",
+          "message": "Small, focused configuration file detected.",
+          "suggestion": "Continue keeping configuration modular.",
+          "example": "This file is readable and easy to maintain."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/webpack.config.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/.prettierignore",
       "green_score": 100,
       "issues": 0,
       "practices": 0,
@@ -84,7 +179,37 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/stylelint.config.js",
+      "path": "service-manual-ui/package.json",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/sonar-project.properties",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/babel.config.cjs",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/eslint.config.js",
       "green_score": 100,
       "issues": 0,
       "practices": 2,
@@ -130,175 +255,7 @@
       ]
     },
     {
-      "path": "service-manual-ui/package-lock.json",
-      "green_score": 95,
-      "issues": 1,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [
-        {
-          "rule": "config-large",
-          "severity": "medium",
-          "message": "Large configuration or IaC file increases parsing and maintenance cost.",
-          "suggestion": "Split configuration into smaller, reusable modules.",
-          "example": "Extract shared resources into separate templates."
-        }
-      ],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/postcss.config.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/babel.config.cjs",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/sonar-project.properties",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/compose.yml",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 1,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "config-small",
-          "message": "Small, focused configuration file detected.",
-          "suggestion": "Continue keeping configuration modular.",
-          "example": "This file is readable and easy to maintain."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/.prettierignore",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/.npmrc",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/.prettierrc.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/.editorconfig",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/.gitignore",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/webpack.config.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 1,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/LICENCE",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/.nvmrc",
+      "path": "service-manual-ui/.dockerignore",
       "green_score": 100,
       "issues": 0,
       "practices": 0,
@@ -318,7 +275,7 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/.dockerignore",
+      "path": "service-manual-ui/.gitignore",
       "green_score": 100,
       "issues": 0,
       "practices": 0,
@@ -328,7 +285,17 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/eslint.config.js",
+      "path": "service-manual-ui/.editorconfig",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/stylelint.config.js",
       "green_score": 100,
       "issues": 0,
       "practices": 2,
@@ -351,7 +318,7 @@
       ]
     },
     {
-      "path": "service-manual-ui/package.json",
+      "path": "service-manual-ui/.nvmrc",
       "green_score": 100,
       "issues": 0,
       "practices": 0,
@@ -361,7 +328,17 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/.vite/setup-files.js",
+      "path": "service-manual-ui/.npmignore",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/postcss.config.js",
       "green_score": 100,
       "issues": 0,
       "practices": 2,
@@ -407,7 +384,730 @@
       ]
     },
     {
-      "path": "service-manual-ui/src/server/router.js",
+      "path": "service-manual-ui/src/content/take-part-in-research.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/user-research.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/architecture-and-software-development.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/design.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/suggest-content.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/accessibility.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/business-analysis.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/security.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/accessibility-statement.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/components.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/content.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/testing-and-assurance.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/sustainability.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/patterns.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/working-with-defra.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/service-assessments.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/product-and-delivery.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/accessibility/test-for-accessibility.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/accessibility/manage-accessibility.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/content/working-in-live.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/content/colour-contrast.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/content/accessibility-tools.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/content/inclusive-clear-language.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/content/sharing-designs-recording-decisions.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/content/tools.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/content/working-in-alpha.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/content/working-in-discovery.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/content/welsh-language-translation.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/content/designing-different-content-types.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/content/working-in-beta.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/content/accessible-spreadsheets.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/content/legal-content.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/business-analysis/ways-of-working.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/service-assessments/book-an-assessment.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/service-assessments/assessment-questions.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/service-assessments/gov-uk-exemptions.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/service-assessments/become-an-assessor.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/architecture-and-software-development/defra-forms.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/architecture-and-software-development/defra-accessible-maps.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/architecture-and-software-development/defra-customer-identity.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/architecture-and-software-development/core-delivery-platform.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/testing-and-assurance/recommended-approach.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/product-and-delivery/governance.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/product-and-delivery/tools-and-access.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/security/common-tasks.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/design/branding.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/design/components-and-patterns.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/design/cookies.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/design/tools.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/design/prototyping.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/design/data-visualisation.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/delivery-groups/follow-delivery-governance.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/delivery-groups/meet-delivery-standards.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/delivery-groups/meet-delivery-standards/roadmap-for-change.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/delivery-groups/meet-delivery-standards/success-measures.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/delivery-groups/meet-delivery-standards/products-and-services.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/delivery-groups/meet-delivery-standards/define-outcomes.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/delivery-groups/follow-delivery-governance/assurance.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/delivery-groups/follow-delivery-governance/governance-model.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/delivery-groups/follow-delivery-governance/assurance/spend-control.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/delivery-groups/follow-delivery-governance/assurance/operational-service-readiness.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/delivery-groups/follow-delivery-governance/assurance/service-assessments.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/delivery-groups/follow-delivery-governance/assurance/other-assurance-types.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/sustainability/objectives.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/sustainability/process.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/sustainability/metrics.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/user-research/scoping-research.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/user-research/tools.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/user-research/recruiting-participants.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/content/user-research/standards-and-guidance.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/config/config.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/config/nunjucks/nunjucks.js",
       "green_score": 100,
       "issues": 0,
       "practices": 1,
@@ -420,6 +1120,305 @@
           "message": "No dynamic code execution detected.",
           "suggestion": "Continue avoiding dynamic execution.",
           "example": "Prefer static imports and explicit logic."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/config/nunjucks/context/context.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/config/nunjucks/context/build-navigation.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/config/nunjucks/context/context.unit.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/config/nunjucks/context/context.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/config/nunjucks/context/build-navigation.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/config/nunjucks/filters/markdown.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/config/nunjucks/filters/format-date.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/config/nunjucks/filters/format-currency.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/config/nunjucks/filters/format-currency.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/config/nunjucks/filters/markdown.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/config/nunjucks/filters/filters.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/config/nunjucks/filters/format-date.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/config/nunjucks/globals/globals.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
         }
       ]
     },
@@ -441,10 +1440,10 @@
       ]
     },
     {
-      "path": "service-manual-ui/src/server/service-manual/controller.test.js",
+      "path": "service-manual-ui/src/server/router.js",
       "green_score": 100,
       "issues": 0,
-      "practices": 2,
+      "practices": 1,
       "energy_impact": "N/A (static)",
       "status": "Excellent",
       "issue_details": [],
@@ -454,40 +1453,11 @@
           "message": "No dynamic code execution detected.",
           "suggestion": "Continue avoiding dynamic execution.",
           "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
         }
       ]
     },
     {
       "path": "service-manual-ui/src/server/service-manual/controller.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/service-manual/index.js",
       "green_score": 100,
       "issues": 0,
       "practices": 2,
@@ -520,7 +1490,7 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/src/server/markdown-pages/controller.test.js",
+      "path": "service-manual-ui/src/server/service-manual/index.js",
       "green_score": 100,
       "issues": 0,
       "practices": 2,
@@ -543,7 +1513,7 @@
       ]
     },
     {
-      "path": "service-manual-ui/src/server/markdown-pages/controller.js",
+      "path": "service-manual-ui/src/server/service-manual/controller.test.js",
       "green_score": 100,
       "issues": 0,
       "practices": 2,
@@ -566,53 +1536,7 @@
       ]
     },
     {
-      "path": "service-manual-ui/src/server/markdown-pages/index.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/markdown-pages/controller.unit.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/error/index.njk",
+      "path": "service-manual-ui/src/server/common/README.md",
       "green_score": 100,
       "issues": 0,
       "practices": 0,
@@ -622,7 +1546,796 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/src/server/home/controller.test.js",
+      "path": "service-manual-ui/src/server/common/constants/status-codes.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/components/heading/macro.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/components/heading/template.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/components/heading/template.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/components/heading/_heading.scss",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/components/interruption-card/macro.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/test-helpers/component-helpers.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/templates/partials/support-box.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/templates/partials/service-navigation.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/templates/partials/README.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/templates/partials/header-search.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/templates/partials/section-navigation.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/templates/partials/navigation.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/templates/partials/cookie-banner.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/templates/partials/main-navigation.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/templates/partials/footer.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/templates/layouts/section.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/templates/layouts/side-nav.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/templates/layouts/two-thirds.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/templates/layouts/page.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/templates/layouts/delivery-groups.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/search-index.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/process-error-handlers.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/process-error-handlers.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/content-loader.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/pulse.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/serve-static-files.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/content-loader.unit.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/start-server.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/metrics.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/serve-static-files.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/search-index.unit.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/content-loader.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/errors.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/start-server.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/metrics.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/content-security-policy.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/search-index.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/errors.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/request-tracing.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/content-security-policy.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/proxy/setup-proxy.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/proxy/setup-proxy.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/logging/logger.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/logging/request-logger.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/common/helpers/logging/logger-options.js",
       "green_score": 100,
       "issues": 0,
       "practices": 2,
@@ -668,6 +2381,16 @@
       ]
     },
     {
+      "path": "service-manual-ui/src/server/home/home.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
       "path": "service-manual-ui/src/server/home/index.js",
       "green_score": 100,
       "issues": 0,
@@ -691,7 +2414,30 @@
       ]
     },
     {
-      "path": "service-manual-ui/src/server/home/home.njk",
+      "path": "service-manual-ui/src/server/home/controller.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/error/index.njk",
       "green_score": 100,
       "issues": 0,
       "practices": 0,
@@ -701,7 +2447,7 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/src/server/health/controller.test.js",
+      "path": "service-manual-ui/src/server/markdown-pages/controller.js",
       "green_score": 100,
       "issues": 0,
       "practices": 2,
@@ -724,7 +2470,7 @@
       ]
     },
     {
-      "path": "service-manual-ui/src/server/health/controller.js",
+      "path": "service-manual-ui/src/server/markdown-pages/controller.unit.test.js",
       "green_score": 100,
       "issues": 0,
       "practices": 2,
@@ -747,7 +2493,7 @@
       ]
     },
     {
-      "path": "service-manual-ui/src/server/health/index.js",
+      "path": "service-manual-ui/src/server/markdown-pages/index.js",
       "green_score": 100,
       "issues": 0,
       "practices": 2,
@@ -770,7 +2516,7 @@
       ]
     },
     {
-      "path": "service-manual-ui/src/server/cookies/controller.test.js",
+      "path": "service-manual-ui/src/server/markdown-pages/controller.test.js",
       "green_score": 100,
       "issues": 0,
       "practices": 2,
@@ -816,6 +2562,16 @@
       ]
     },
     {
+      "path": "service-manual-ui/src/server/cookies/cookies.njk",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
       "path": "service-manual-ui/src/server/cookies/index.js",
       "green_score": 100,
       "issues": 0,
@@ -839,7 +2595,53 @@
       ]
     },
     {
-      "path": "service-manual-ui/src/server/cookies/cookies.njk",
+      "path": "service-manual-ui/src/server/cookies/controller.test.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/search/controller.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/search/results.njk",
       "green_score": 100,
       "issues": 0,
       "practices": 0,
@@ -849,7 +2651,30 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/src/server/delivery-groups/controller.test.js",
+      "path": "service-manual-ui/src/server/search/index.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/search/controller.test.js",
       "green_score": 100,
       "issues": 0,
       "practices": 2,
@@ -928,17 +2753,76 @@
       ]
     },
     {
-      "path": "service-manual-ui/src/server/interruption/view.njk",
+      "path": "service-manual-ui/src/server/delivery-groups/controller.test.js",
       "green_score": 100,
       "issues": 0,
-      "practices": 0,
+      "practices": 2,
       "energy_impact": "N/A (static)",
       "status": "Excellent",
       "issue_details": [],
-      "practice_details": []
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
     },
     {
-      "path": "service-manual-ui/src/server/interruption/controller.test.js",
+      "path": "service-manual-ui/src/server/health/controller.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/health/index.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/src/server/health/controller.test.js",
       "green_score": 100,
       "issues": 0,
       "practices": 2,
@@ -1007,7 +2891,7 @@
       ]
     },
     {
-      "path": "service-manual-ui/src/server/common/README.md",
+      "path": "service-manual-ui/src/server/interruption/view.njk",
       "green_score": 100,
       "issues": 0,
       "practices": 0,
@@ -1017,210 +2901,7 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/src/server/common/constants/status-codes.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/templates/layouts/side-nav.njk",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/templates/layouts/delivery-groups.njk",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/templates/layouts/two-thirds.njk",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/templates/layouts/page.njk",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/templates/layouts/section.njk",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/templates/partials/README.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/templates/partials/footer.njk",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/templates/partials/cookie-banner.njk",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/templates/partials/section-navigation.njk",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/templates/partials/service-navigation.njk",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/templates/partials/support-box.njk",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/templates/partials/header-search.njk",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/templates/partials/navigation.njk",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/templates/partials/main-navigation.njk",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/components/interruption-card/macro.njk",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/components/heading/_heading.scss",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/components/heading/macro.njk",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/components/heading/template.njk",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/server/common/components/heading/template.test.js",
+      "path": "service-manual-ui/src/server/interruption/controller.test.js",
       "green_score": 100,
       "issues": 0,
       "practices": 2,
@@ -1243,1354 +2924,9 @@
       ]
     },
     {
-      "path": "service-manual-ui/src/server/common/helpers/serve-static-files.test.js",
+      "path": "service-manual-ui/src/client/common/README.md",
       "green_score": 100,
       "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/start-server.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/search-index.unit.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/content-loader.unit.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/search-index.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/pulse.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/serve-static-files.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/search-index.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 1,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/metrics.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/metrics.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/errors.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/request-tracing.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/content-loader.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/content-security-policy.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/process-error-handlers.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/content-security-policy.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/content-loader.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/start-server.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/errors.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/process-error-handlers.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/proxy/setup-proxy.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/proxy/setup-proxy.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/logging/request-logger.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/logging/logger-options.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/helpers/logging/logger.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/common/test-helpers/component-helpers.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 1,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/search/controller.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/search/controller.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/search/index.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/server/search/results.njk",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/product-and-delivery.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/content.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/accessibility-statement.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/take-part-in-research.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/suggest-content.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/user-research.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/testing-and-assurance.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/business-analysis.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/working-with-defra.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/architecture-and-software-development.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/accessibility.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/sustainability.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/components.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/patterns.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/service-assessments.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/design.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/security.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/user-research/standards-and-guidance.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/user-research/tools.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/user-research/recruiting-participants.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/user-research/scoping-research.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/content/working-in-beta.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/content/accessibility-tools.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/content/colour-contrast.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/content/sharing-designs-recording-decisions.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/content/tools.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/content/working-in-alpha.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/content/inclusive-clear-language.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/content/legal-content.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/content/working-in-discovery.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/content/welsh-language-translation.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/content/working-in-live.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/content/designing-different-content-types.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/content/accessible-spreadsheets.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/product-and-delivery/tools-and-access.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/product-and-delivery/governance.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/business-analysis/ways-of-working.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/design/cookies.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/design/data-visualisation.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/design/tools.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/design/prototyping.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/design/branding.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/design/components-and-patterns.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/delivery-groups/meet-delivery-standards.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/delivery-groups/follow-delivery-governance.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/delivery-groups/meet-delivery-standards/products-and-services.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/delivery-groups/meet-delivery-standards/define-outcomes.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/delivery-groups/meet-delivery-standards/roadmap-for-change.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/delivery-groups/meet-delivery-standards/success-measures.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/delivery-groups/follow-delivery-governance/governance-model.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/delivery-groups/follow-delivery-governance/assurance.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/delivery-groups/follow-delivery-governance/assurance/other-assurance-types.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/delivery-groups/follow-delivery-governance/assurance/operational-service-readiness.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/delivery-groups/follow-delivery-governance/assurance/service-assessments.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/delivery-groups/follow-delivery-governance/assurance/spend-control.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/accessibility/test-for-accessibility.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/accessibility/manage-accessibility.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/testing-and-assurance/recommended-approach.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/sustainability/metrics.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/sustainability/process.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/sustainability/objectives.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/architecture-and-software-development/defra-forms.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/architecture-and-software-development/core-delivery-platform.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/architecture-and-software-development/defra-accessible-maps.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/architecture-and-software-development/defra-customer-identity.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/service-assessments/assessment-questions.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/service-assessments/gov-uk-exemptions.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/service-assessments/book-an-assessment.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/content/service-assessments/become-an-assessor.md",
-      "green_score": 100,
-      "issues": 0,
       "practices": 0,
       "energy_impact": "N/A (static)",
       "status": "Excellent",
@@ -2598,7 +2934,7 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/src/content/security/common-tasks.md",
+      "path": "service-manual-ui/src/client/common/helpers/.gitkeep",
       "green_score": 100,
       "issues": 0,
       "practices": 0,
@@ -2606,345 +2942,6 @@
       "status": "Excellent",
       "issue_details": [],
       "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/config/config.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/config/nunjucks/nunjucks.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 1,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/config/nunjucks/context/build-navigation.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/config/nunjucks/context/context.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/config/nunjucks/context/context.unit.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/config/nunjucks/context/build-navigation.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/config/nunjucks/context/context.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/config/nunjucks/filters/format-currency.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/config/nunjucks/filters/filters.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/config/nunjucks/filters/format-currency.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/config/nunjucks/filters/markdown.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/config/nunjucks/filters/markdown.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/config/nunjucks/filters/format-date.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/config/nunjucks/filters/format-date.test.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/src/config/nunjucks/globals/globals.js",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 2,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
     },
     {
       "path": "service-manual-ui/src/client/stylesheets/application.scss",
@@ -2967,7 +2964,47 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/src/client/stylesheets/partials/_index.scss",
+      "path": "service-manual-ui/src/client/stylesheets/components/_defra-search.scss",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/client/stylesheets/components/_defra-tiles.scss",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/client/stylesheets/components/_defra-layout.scss",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/client/stylesheets/components/_interruption-card.scss",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/client/stylesheets/components/_defra-header.scss",
       "green_score": 100,
       "issues": 0,
       "practices": 0,
@@ -2997,56 +3034,6 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/src/client/stylesheets/components/_defra-tiles.scss",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/client/stylesheets/components/_defra-breadcrumb-bar.scss",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/client/stylesheets/components/_defra-header.scss",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/client/stylesheets/components/_defra-layout.scss",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/client/stylesheets/components/_defra-search.scss",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
       "path": "service-manual-ui/src/client/stylesheets/components/_cookie-banner.scss",
       "green_score": 100,
       "issues": 0,
@@ -3057,27 +3044,7 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/src/client/stylesheets/components/_defra-service-navigation.scss",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/client/stylesheets/components/_index.scss",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/client/stylesheets/components/_interruption-card.scss",
+      "path": "service-manual-ui/src/client/stylesheets/components/_defra-navigation.scss",
       "green_score": 100,
       "issues": 0,
       "practices": 0,
@@ -3097,7 +3064,57 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/src/client/stylesheets/components/_defra-navigation.scss",
+      "path": "service-manual-ui/src/client/stylesheets/components/_index.scss",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/client/stylesheets/components/_defra-breadcrumb-bar.scss",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/client/stylesheets/components/_defra-service-navigation.scss",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/client/stylesheets/partials/_index.scss",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/client/stylesheets/variables/_index.scss",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/client/stylesheets/variables/_colours.scss",
       "green_score": 100,
       "issues": 0,
       "practices": 0,
@@ -3157,7 +3174,7 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/src/client/stylesheets/variables/_colours.scss",
+      "path": "service-manual-ui/src/client/images/apple-touch-icon.png",
       "green_score": 100,
       "issues": 0,
       "practices": 0,
@@ -3167,7 +3184,7 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/src/client/stylesheets/variables/_index.scss",
+      "path": "service-manual-ui/src/client/images/favicon.svg",
       "green_score": 100,
       "issues": 0,
       "practices": 0,
@@ -3177,27 +3194,54 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/src/client/javascripts/cookie-consent.test.js",
+      "path": "service-manual-ui/src/client/images/defra-logo.svg",
       "green_score": 100,
       "issues": 0,
-      "practices": 2,
+      "practices": 0,
       "energy_impact": "N/A (static)",
       "status": "Excellent",
       "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "no-dynamic-exec",
-          "message": "No dynamic code execution detected.",
-          "suggestion": "Continue avoiding dynamic execution.",
-          "example": "Prefer static imports and explicit logic."
-        },
-        {
-          "rule": "low-import-count",
-          "message": "Low number of imports detected.",
-          "suggestion": "Maintain small dependency surface.",
-          "example": "This file depends on only a few well-defined modules."
-        }
-      ]
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/client/images/favicon.ico",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/client/images/social-share.png",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/client/images/delivery-groups/governance-model-poster.png",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/src/client/images/delivery-groups/governance-model-diagram.png",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
     },
     {
       "path": "service-manual-ui/src/client/javascripts/application.js",
@@ -3223,7 +3267,7 @@
       ]
     },
     {
-      "path": "service-manual-ui/src/client/javascripts/cookie-consent.js",
+      "path": "service-manual-ui/src/client/javascripts/application.test.js",
       "green_score": 100,
       "issues": 0,
       "practices": 2,
@@ -3246,7 +3290,7 @@
       ]
     },
     {
-      "path": "service-manual-ui/src/client/javascripts/application.test.js",
+      "path": "service-manual-ui/src/client/javascripts/cookie-consent.test.js",
       "green_score": 100,
       "issues": 0,
       "practices": 2,
@@ -3315,172 +3359,50 @@
       ]
     },
     {
-      "path": "service-manual-ui/src/client/images/favicon.ico",
+      "path": "service-manual-ui/src/client/javascripts/cookie-consent.js",
       "green_score": 100,
       "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/client/images/favicon.svg",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/client/images/social-share.png",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/client/images/defra-logo.svg",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/client/images/apple-touch-icon.png",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/client/images/delivery-groups/governance-model-diagram.png",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/client/images/delivery-groups/governance-model-poster.png",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/client/common/README.md",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/src/client/common/helpers/.gitkeep",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
-    },
-    {
-      "path": "service-manual-ui/.github/example.dependabot.yml",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 1,
+      "practices": 2,
       "energy_impact": "N/A (static)",
       "status": "Excellent",
       "issue_details": [],
       "practice_details": [
         {
-          "rule": "config-small",
-          "message": "Small, focused configuration file detected.",
-          "suggestion": "Continue keeping configuration modular.",
-          "example": "This file is readable and easy to maintain."
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
         }
       ]
     },
     {
-      "path": "service-manual-ui/.github/workflows/publish.yml",
+      "path": "service-manual-ui/.vite/setup-files.js",
       "green_score": 100,
       "issues": 0,
-      "practices": 1,
+      "practices": 2,
       "energy_impact": "N/A (static)",
       "status": "Excellent",
       "issue_details": [],
       "practice_details": [
         {
-          "rule": "config-small",
-          "message": "Small, focused configuration file detected.",
-          "suggestion": "Continue keeping configuration modular.",
-          "example": "This file is readable and easy to maintain."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/.github/workflows/check-pull-request.yml",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 1,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
         {
-          "rule": "config-small",
-          "message": "Small, focused configuration file detected.",
-          "suggestion": "Continue keeping configuration modular.",
-          "example": "This file is readable and easy to maintain."
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
         }
       ]
-    },
-    {
-      "path": "service-manual-ui/.github/workflows/publish-hotfix.yml",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 1,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "config-small",
-          "message": "Small, focused configuration file detected.",
-          "suggestion": "Continue keeping configuration modular.",
-          "example": "This file is readable and easy to maintain."
-        }
-      ]
-    },
-    {
-      "path": "service-manual-ui/.husky/pre-commit",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 0,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": []
     },
     {
       "path": "service-manual-ui/docs/README.md",
@@ -3533,23 +3455,6 @@
       "practice_details": []
     },
     {
-      "path": "service-manual-ui/.sonarlint/connectedMode.json",
-      "green_score": 100,
-      "issues": 0,
-      "practices": 1,
-      "energy_impact": "N/A (static)",
-      "status": "Excellent",
-      "issue_details": [],
-      "practice_details": [
-        {
-          "rule": "config-small",
-          "message": "Small, focused configuration file detected.",
-          "suggestion": "Continue keeping configuration modular.",
-          "example": "This file is readable and easy to maintain."
-        }
-      ]
-    },
-    {
       "path": "service-manual-ui/compose/start-localstack.sh",
       "green_score": 100,
       "issues": 0,
@@ -3568,6 +3473,101 @@
       "status": "Excellent",
       "issue_details": [],
       "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/.github/example.dependabot.yml",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "config-small",
+          "message": "Small, focused configuration file detected.",
+          "suggestion": "Continue keeping configuration modular.",
+          "example": "This file is readable and easy to maintain."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/.github/workflows/check-pull-request.yml",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "config-small",
+          "message": "Small, focused configuration file detected.",
+          "suggestion": "Continue keeping configuration modular.",
+          "example": "This file is readable and easy to maintain."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/.github/workflows/publish-hotfix.yml",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "config-small",
+          "message": "Small, focused configuration file detected.",
+          "suggestion": "Continue keeping configuration modular.",
+          "example": "This file is readable and easy to maintain."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/.github/workflows/publish.yml",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "config-small",
+          "message": "Small, focused configuration file detected.",
+          "suggestion": "Continue keeping configuration modular.",
+          "example": "This file is readable and easy to maintain."
+        }
+      ]
+    },
+    {
+      "path": "service-manual-ui/.husky/pre-commit",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "service-manual-ui/.sonarlint/connectedMode.json",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "config-small",
+          "message": "Small, focused configuration file detected.",
+          "suggestion": "Continue keeping configuration modular.",
+          "example": "This file is readable and easy to maintain."
+        }
+      ]
     }
   ]
 }
