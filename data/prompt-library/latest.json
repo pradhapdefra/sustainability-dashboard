@@ -1,0 +1,5167 @@
+{
+  "sustainability_metrics": {
+    "overall_score": 49,
+    "energy_efficiency": 40,
+    "resource_utilization": 50,
+    "performance_optimization": 50,
+    "sustainable_practices": 55
+  },
+  "analysis_summary": {
+    "file_count": 305,
+    "timestamp": "2026-04-28T11:52:35.182642+00:00"
+  },
+  "directory_scores": [
+    {
+      "path": "prompt-library",
+      "file_count": 305,
+      "score": 50,
+      "status": "Fair"
+    }
+  ],
+  "penalties": [
+    {
+      "type": "directory-concentration",
+      "impact": 10,
+      "message": "A single directory contains more than 60% of files, increasing sustainability and performance risk."
+    }
+  ],
+  "issues": [
+    {
+      "type": "directory-concentration",
+      "severity": "medium",
+      "message": "A single directory contains more than 60% of files, increasing sustainability and performance risk."
+    }
+  ],
+  "recommendations": [
+    "Consider reorganising or modularising directories to reduce structural sustainability and performance risk."
+  ],
+  "file_scores": [
+    {
+      "path": "prompt-library/package-lock.json",
+      "green_score": 95,
+      "issues": 1,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [
+        {
+          "rule": "config-large",
+          "severity": "medium",
+          "message": "Large configuration or IaC file increases parsing and maintenance cost.",
+          "suggestion": "Split configuration into smaller, reusable modules.",
+          "example": "Extract shared resources into separate templates."
+        }
+      ],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/tsconfig.json",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "config-small",
+          "message": "Small, focused configuration file detected.",
+          "suggestion": "Continue keeping configuration modular.",
+          "example": "This file is readable and easy to maintain."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/.deployment",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/index.html",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/test.groovy",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/.gitattributes",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/vite.config.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/README.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/Logo.svg",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/.env",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/tsconfig.tsbuildinfo",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/content.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/tailwind.config.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/vitest.config.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/package.json",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/tsconfig.app.json",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "config-small",
+          "message": "Small, focused configuration file detected.",
+          "suggestion": "Continue keeping configuration modular.",
+          "example": "This file is readable and easy to maintain."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/server.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/tsconfig.node.tsbuildinfo",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/sonar-project.properties",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/eslint.config.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/env.example",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/test-results.json",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "config-small",
+          "message": "Small, focused configuration file detected.",
+          "suggestion": "Continue keeping configuration modular.",
+          "example": "This file is readable and easy to maintain."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/browser-setup.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/.gitignore",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/render.yaml",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "config-small",
+          "message": "Small, focused configuration file detected.",
+          "suggestion": "Continue keeping configuration modular.",
+          "example": "This file is readable and easy to maintain."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/Logo2.svg",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/vitest-setup.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/--no-override",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/vite.config.d.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/tsconfig.node.json",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "config-small",
+          "message": "Small, focused configuration file detected.",
+          "suggestion": "Continue keeping configuration modular.",
+          "example": "This file is readable and easy to maintain."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/.env.test.example",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/coverage_output.txt",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/postcss.config.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/config.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/main.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/test-utils.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/App.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/index.css",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/constants.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/vite-env.d.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/test-mocks.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/types.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/debug-env.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/debug-env.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/config.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/__tests__/config.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/__tests__/main.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/__tests__/App.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/__tests__/Constants.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/__tests__/debug-env.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/__tests__/stubs/templateListStubs.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/__tests__/__mocks__/roleStore.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/components/CodeBlock.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/RoleFilter.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/ChatMarkdown.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/CodeBlockRenderer.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/Switch.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/CommonMarkdownRenderer.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/LoginPage.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/PreviewPage.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/TemplateCard.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/ViewTemplateModal.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/Sidebar.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/ErrorMessage.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/RoleSelector.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/SearchBar.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/EnhancePromptModal.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/Select.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/EnhancePromptModal.utils.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/components/Modal.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/ChatInterface.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/EnhancePromptModal.buildSystemPrompt.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/components/CreatePromptModal.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/CreateTemplateModal.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/SimplePromptModal.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/EnhancePromptModal.components.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/Toast.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/TemplateList.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/ConfirmDialog.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/ManageModal.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/UnifiedModal.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/MarkdownCodeBlockRenderer.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/Button.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/TemplateSectionRenderer.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/EnhancePromptModal.codeHandling.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/components/EnhancePromptModal.CodeBlockCard.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/RealTimePreview.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/ErrorBoundary.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/MessageButton.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/MarkdownRenderer.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/Select.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/TemplateSectionRenderer.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/EnhancePromptModal.utils.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/RealTimePreview.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/ChatInterface.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/ErrorMessage.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/MarkdownRenderer.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/TemplateList.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/Switch.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/MessageButton.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/ConfirmDialog.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/EnhancePromptModal.buildSystemPrompt.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/MarkdownCodeBlockRenderer.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/CreateTemplateModal.sections.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/ErrorBoundary.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/Sidebar.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/PreviewPage.nonadmin.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/CommonMarkdownRenderer.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/Modal.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/PreviewPage.rendering.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/CreateTemplateModal.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/PreviewPage.llm.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/PreviewPage.codeHandling.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/EnhancePromptModal.components.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/Button.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/UnifiedModal.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/PreviewPage.components.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/ManageModal.loading.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/ViewTemplateModal.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/Toast.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/CreateTemplateModal.race.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/SearchBar.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/RoleSelector.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/EnhancePromptModal.CodeBlockCard.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/CreatePromptModal.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/EnhancePromptModal.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/EnhancePromptModal.codeHandling.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/ManageModal.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/CodeBlockRenderer.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/Sidebar.light-theme.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/CodeBlock.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/PreviewPage.utils.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/PreviewPage.edge-cases.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/TemplateCard.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/ChatMarkdown.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/LoginPage.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__tests__/RoleFilter.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__mocks__/ChatInterface.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/__mocks__/ChatInterface.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/sections/TextAreaSection.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/sections/SelectSection.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/sections/FileUploadSection.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/sections/RoleSelectionSection.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/sections/MultiSelectSection.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/sections/__tests__/SelectSection.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/sections/__tests__/RoleSelectionSection.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/sections/__tests__/MultiSelectSection.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/sections/__tests__/FileUploadSection.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/components/sections/__tests__/TextAreaSection.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/data/defaultRoles.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/data/languages.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/data/defaultTemplates.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/data/defaultRoles.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/data/Roles/ddat-roles.json",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "config-small",
+          "message": "Small, focused configuration file detected.",
+          "suggestion": "Continue keeping configuration modular.",
+          "example": "This file is readable and easy to maintain."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/data/Templates/ddat-templates.json",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/config/apiConfig.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/config/apiConfig.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/config/storeConfig.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/config/testConfig.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/__mocks__/react-syntax-highlighter.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/__mocks__/react-markdown.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/__mocks__/prism-styles.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/types/index.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/types/import.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/types/importTypes.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/types/vscode.d.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/types/race.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/initializeStores.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/useStore.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/roleStore.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/index.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/templateStore.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/chatStore.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/__tests__/useStore.mocks.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/__tests__/index.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/__tests__/chatStore.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/__tests__/initializeStores.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/__tests__/templateStore.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/__tests__/useStore.test.ts",
+      "green_score": 100,
+      "issues": 1,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [
+        {
+          "rule": "js-large-file",
+          "severity": "medium",
+          "message": "Large source file may increase parsing and maintenance cost.",
+          "suggestion": "Split this file into smaller modules with clearer responsibilities.",
+          "example": "Extract helper functions into separate files."
+        }
+      ],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/__tests__/roleStore.test.ts",
+      "green_score": 100,
+      "issues": 1,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [
+        {
+          "rule": "js-large-file",
+          "severity": "medium",
+          "message": "Large source file may increase parsing and maintenance cost.",
+          "suggestion": "Split this file into smaller modules with clearer responsibilities.",
+          "example": "Extract helper functions into separate files."
+        }
+      ],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/__tests__/roleStoreImplementation.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/__mocks__/useStore.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/__mocks__/roleStore.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/__mocks__/store.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/__mocks__/roleStore.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/store/__mocks__/store.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/styles/SimplePromptModal.css",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/styles/globals.css",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/styles/TemplateList.css",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/styles/themeClasses.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/styles/Switch.css",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/styles/vscodeThemeMapping.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/styles/ShareTemplateModal.css",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/routes/index.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/routes/index.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/layouts/MainLayout.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/layouts/__tests__/MainLayout.test.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/contexts/ThemeContext.tsx",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/services/serperSearch.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/services/apiSelector.ts",
+      "green_score": 97,
+      "issues": 1,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [
+        {
+          "rule": "js-large-file",
+          "severity": "medium",
+          "message": "Large source file may increase parsing and maintenance cost.",
+          "suggestion": "Split this file into smaller modules with clearer responsibilities.",
+          "example": "Extract helper functions into separate files."
+        }
+      ],
+      "practice_details": [
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/services/authService.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/services/__tests__/apiSelector.all-endpoints-fail.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/services/__tests__/apiSelector.missing-content-main.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/services/__tests__/apiSelector.endpoint-normalization.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/services/__tests__/apiSelector.network-error-isolated.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/services/__tests__/apiSelector.retry-logic.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/services/__tests__/apiSelector.azure-policy-violation.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/services/__tests__/apiSelector.azure-policy-main.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/services/__tests__/apiSelector.test.ts",
+      "green_score": 100,
+      "issues": 1,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [
+        {
+          "rule": "js-large-file",
+          "severity": "medium",
+          "message": "Large source file may increase parsing and maintenance cost.",
+          "suggestion": "Split this file into smaller modules with clearer responsibilities.",
+          "example": "Extract helper functions into separate files."
+        }
+      ],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/services/__tests__/apiSelector.search-ddat-error.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/services/__tests__/authService.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/services/__tests__/apiSelector.network-error.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/services/__tests__/apiSelector.missing-message-content.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/services/__tests__/apiSelector.simple.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/services/__tests__/serperSearch.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/useRoleAndExpertise.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/useMultiSelectState.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/usePromptFormValidation.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/useSync.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/usePromptFormState.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/useFocusEffect.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/useFileHandlers.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/useErrorBoundary.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/useCustomSections.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/useTemplateSelection.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/useFileHandling.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/useFormHandlers.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/useTemplateValidation.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/useAutoHeight.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/usePromptHandlers.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/useCustomSectionValidation.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/useFormValidation.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/__tests__/useTemplateSelection.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/__tests__/useFocusEffect.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/__tests__/useAutoHeight.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/__tests__/usePromptFormValidation.test.ts",
+      "green_score": 100,
+      "issues": 1,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [
+        {
+          "rule": "js-large-file",
+          "severity": "medium",
+          "message": "Large source file may increase parsing and maintenance cost.",
+          "suggestion": "Split this file into smaller modules with clearer responsibilities.",
+          "example": "Extract helper functions into separate files."
+        }
+      ],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/__tests__/useSync.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/__tests__/useCustomSectionValidation.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/__tests__/useFormHandlers.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/__tests__/useFileHandling.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/__tests__/useErrorBoundary.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/__tests__/useMultiSelectState.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/__tests__/useCustomSections.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/__tests__/usePromptFormState.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/__tests__/useFormValidation.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/__tests__/useRoleAndExpertise.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/__tests__/usePromptHandlers.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/__tests__/useTemplateValidation.test.ts",
+      "green_score": 98,
+      "issues": 1,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [
+        {
+          "rule": "js-large-file",
+          "severity": "medium",
+          "message": "Large source file may increase parsing and maintenance cost.",
+          "suggestion": "Split this file into smaller modules with clearer responsibilities.",
+          "example": "Extract helper functions into separate files."
+        }
+      ],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/hooks/__tests__/useFileHandlers.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/promptGenerator.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/templateValidation.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/helpers.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/clipboard.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/templateValidation.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/generateId.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/security.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/promptGenerator.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/generateId.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/codeUtils.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/rateLimit.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/fileUtils.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/customSectionValidation.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/codeValidation.ts",
+      "green_score": 100,
+      "issues": 1,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [
+        {
+          "rule": "js-large-file",
+          "severity": "medium",
+          "message": "Large source file may increase parsing and maintenance cost.",
+          "suggestion": "Split this file into smaller modules with clearer responsibilities.",
+          "example": "Extract helper functions into separate files."
+        }
+      ],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/clipboard.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/fileUtils.test.ts.new",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/src/utils/helpers.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/validation.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/rateLimit.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/security.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/customSectionValidation.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/codeValidation.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/validation.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/fileUtils.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/src/utils/codeUtils.test.ts",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/public/Logo.svg",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/public/config.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/docs/README.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/docs/TESTING_STRATEGY.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/docs/COMPONENTS.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/docs/SYSTEM_FLOWS.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/docs/DATABASE_MIGRATION.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/docs/TESTING.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/docs/PRESENTATION.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/docs/KNOWLEDGE_TRANSFER.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/docs/DIAGRAMS.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/docs/TESTING_GUIDE.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/docs/TECHNICAL.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/docs/Prompt_Library_Application_Specifications.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/docs/IMPLEMENTATION_GUIDELINES.md",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/docs/Instant Insights_ The Trust Insights RACE AI Framework.pptx.pdf",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/.github/workflows/deploy.yml",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "config-small",
+          "message": "Small, focused configuration file detected.",
+          "suggestion": "Continue keeping configuration modular.",
+          "example": "This file is readable and easy to maintain."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/.github/workflows/ci.yml",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "config-small",
+          "message": "Small, focused configuration file detected.",
+          "suggestion": "Continue keeping configuration modular.",
+          "example": "This file is readable and easy to maintain."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/scripts/deploy.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/scripts/normalize-coverage-paths.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/uitests/package-lock.json",
+      "green_score": 95,
+      "issues": 1,
+      "practices": 0,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [
+        {
+          "rule": "config-large",
+          "severity": "medium",
+          "message": "Large configuration or IaC file increases parsing and maintenance cost.",
+          "suggestion": "Split configuration into smaller, reusable modules.",
+          "example": "Extract shared resources into separate templates."
+        }
+      ],
+      "practice_details": []
+    },
+    {
+      "path": "prompt-library/uitests/wdio.conf.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/uitests/package.json",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 1,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "config-small",
+          "message": "Small, focused configuration file detected.",
+          "suggestion": "Continue keeping configuration modular.",
+          "example": "This file is readable and easy to maintain."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/uitests/test/specs/landingPageNoLogin.spec.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/uitests/test/specs/testingE2E.spec.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/uitests/test/pages/dashboard.page.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/uitests/test/pages/launch.page.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/uitests/test/pages/manage.page.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/uitests/test/pages/createPrompt.page.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/uitests/test/pages/langTranslation.page.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    },
+    {
+      "path": "prompt-library/uitests/test/utils/utility.js",
+      "green_score": 100,
+      "issues": 0,
+      "practices": 2,
+      "energy_impact": "N/A (static)",
+      "status": "Excellent",
+      "issue_details": [],
+      "practice_details": [
+        {
+          "rule": "no-dynamic-exec",
+          "message": "No dynamic code execution detected.",
+          "suggestion": "Continue avoiding dynamic execution.",
+          "example": "Prefer static imports and explicit logic."
+        },
+        {
+          "rule": "low-import-count",
+          "message": "Low number of imports detected.",
+          "suggestion": "Maintain small dependency surface.",
+          "example": "This file depends on only a few well-defined modules."
+        }
+      ]
+    }
+  ]
+}
